@@ -3,6 +3,7 @@ import Timer from './Timer';
 import TimerSettings from './TimerSettings';
 import TimerContextProvider from './TimerContext';
 import TimerControls from './TimerControls';
+import Footer from './Footer';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <TimerSettings />
         <TimerControls />
       </div>
+      <Footer />
     </TimerContextProvider>
   );
 }
