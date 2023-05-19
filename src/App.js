@@ -1,5 +1,20 @@
 import React from 'react';
+import Timer from './Timer';
+import TimerSettings from './TimerSettings';
+import TimerContextProvider from './TimerContext';
+import TimerControls from './TimerControls';
 
 export default function App() {
-  return <h1>Welcome to react!</h1>;
+  return (
+    <TimerContextProvider>
+      <div id='pomodoro-timer' className='pomodoro-timer'>
+        <h1 id='title' className='title'>
+          25 + 5 Clock
+        </h1>
+        <Timer />
+        <TimerSettings />
+        <TimerControls />
+      </div>
+    </TimerContextProvider>
+  );
 }

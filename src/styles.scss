@@ -1,0 +1,73 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  .pomodoro-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #timer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .timer-label {
+        font-size: 1.5em;
+      }
+
+      .time-left {
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+    }
+
+    .timer-settings {
+      display: flex;
+      flex-direction: row;
+
+      .setting-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+
+        .setting-label {
+          font-size: 1.2em;
+        }
+
+        .setting-box {
+          margin: 0 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .setting-arrow {
+            font-size: 1.5em;
+          }
+
+          .setting-text {
+            margin: 0 10px;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+
+    .timer-controls {
+      display: flex;
+
+      .control-icon {
+        font-size: 2em;
+        margin: 1em 10px 0 10px;
+      }
+    }
+  }
+}
